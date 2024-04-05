@@ -1,0 +1,11 @@
+MropEquivalenceChecker_20x: 2
+Total Buckets: 2
+-------------
+MropEquivalenceChecker_20x - Bug was reproduced - MropEquivalenceChecker_20x_1.replay.txt
+Hash: MropEquivalenceChecker_20x_a0868a81242ad98a5daba588f4106df848294b32
+POST /users/v1/login HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:5000\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "username":fuzzstring,\n    "password":fuzzstring}\r\n
+--------------------------------------------------------------------------------
+MropEquivalenceChecker_20x - Bug was reproduced - MropEquivalenceChecker_20x_2.replay.txt
+Hash: MropEquivalenceChecker_20x_514b8813b6650ebaf2e623ae768705a8f1dcc7ad
+POST /users/v1/register HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:5000\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "username":fuzzstring,\n    "password":fuzzstring,\n    "email":fuzzstring}\r\n
+--------------------------------------------------------------------------------

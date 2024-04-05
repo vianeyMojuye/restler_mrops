@@ -1,0 +1,6 @@
+2024-03-20 15:21:17.295: Initializing: Garbage collection every 30 seconds.
+2024-03-20 15:21:17.304: Generation: 1 
+Nous sommes dans _equivalence_post_and_delete_same_user 
+
+enter qlq chose :Exception EOF when reading a line applying checker <checkers.mrop_equivalence_checker.MropEquivalenceChecker object at 0x000001B72DB4EB60>
+You pressed Ctrl+C!

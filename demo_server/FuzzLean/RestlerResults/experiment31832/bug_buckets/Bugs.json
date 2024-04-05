@@ -1,0 +1,13 @@
+{"bugs":[{
+    "filepath": "MropEquivalenceChecker_20x_1.json",
+    "reproducible": true,
+    "checker_name": "MropEquivalenceChecker",
+    "error_code": "20x"},{
+    "filepath": "MropEquivalenceChecker_20x_2.json",
+    "reproducible": true,
+    "checker_name": "MropEquivalenceChecker",
+    "error_code": "20x"},{
+    "filepath": "MropEquivalenceChecker_500_1.json",
+    "reproducible": true,
+    "checker_name": "MropEquivalenceChecker",
+    "error_code": "500"}]}

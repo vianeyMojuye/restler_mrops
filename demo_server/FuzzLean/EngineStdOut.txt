@@ -1,0 +1,33 @@
+2024-04-05 11:48:53.032: Initializing: Garbage collection every 30 seconds.
+2024-04-05 11:48:53.072: Generation: 1 
+resp and rule, Method ->  POST
+<engine.core.sequences.Sequence object at 0x00000213B2002E60> [{'status_code': '201', 'resp_body': '{"id":1379,"body":"fuzzstring"}', 'resp_id': 1379}]
+PUT :  <engine.transport_layer.response.HttpResponse object at 0x00000213B2001690>
+[{'status_code': '201', 'resp_body': '{"id":1379,"body":"fuzzstring"}', 'resp_id': 1379}] [{'status_code': '204', 'resp_body': '', 'resp_id': 1379}]
+POST -> PUT   MR Equivalence : OK
+DELETE :  <engine.transport_layer.response.HttpResponse object at 0x00000213B2001660>
+[{'status_code': '201', 'resp_body': '{"id":1379,"body":"fuzzstring"}', 'resp_id': 1379}] [{'status_code': '204', 'resp_body': '', 'resp_id': 1379}]
+POST -> DELETE   MR Equivalence : OK
+resp and rule, Method ->  POST
+<engine.core.sequences.Sequence object at 0x00000213B2002E60> [{'status_code': '201', 'resp_body': '{"id":1379,"body":"fuzzstring"}', 'resp_id': 1379}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"my first blog post"}', 'resp_id': 1381}]
+PUT :  <engine.transport_layer.response.HttpResponse object at 0x00000213B209E860>
+[{'status_code': '201', 'resp_body': '{"id":1379,"body":"fuzzstring"}', 'resp_id': 1379}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"my first blog post"}', 'resp_id': 1381}] [{'status_code': '204', 'resp_body': '', 'resp_id': 1379}, {'status_code': '204', 'resp_body': '', 'resp_id': 1381}]
+POST -> PUT   MR Equivalence : OK
+DELETE :  <engine.transport_layer.response.HttpResponse object at 0x00000213B209E860>
+[{'status_code': '201', 'resp_body': '{"id":1379,"body":"fuzzstring"}', 'resp_id': 1379}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"my first blog post"}', 'resp_id': 1381}] [{'status_code': '204', 'resp_body': '', 'resp_id': 1379}, {'status_code': '204', 'resp_body': '', 'resp_id': 1381}]
+POST -> DELETE   MR Equivalence : OK
+resp and rule, Method ->  POST
+<engine.core.sequences.Sequence object at 0x00000213B2002E60> [{'status_code': '201', 'resp_body': '{"id":1379,"body":"fuzzstring"}', 'resp_id': 1379}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"my first blog post"}', 'resp_id': 1381}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"fuzzstring"}', 'resp_id': 1381}]
+PUT :  <engine.transport_layer.response.HttpResponse object at 0x00000213B20011B0>
+[{'status_code': '201', 'resp_body': '{"id":1379,"body":"fuzzstring"}', 'resp_id': 1379}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"my first blog post"}', 'resp_id': 1381}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"fuzzstring"}', 'resp_id': 1381}] [{'status_code': '204', 'resp_body': '', 'resp_id': 1379}, {'status_code': '204', 'resp_body': '', 'resp_id': 1381}, {'status_code': '204', 'resp_body': '', 'resp_id': 1381}]
+POST -> PUT   MR Equivalence : OK
+DELETE :  <engine.transport_layer.response.HttpResponse object at 0x00000213B2001150>
+[{'status_code': '201', 'resp_body': '{"id":1379,"body":"fuzzstring"}', 'resp_id': 1379}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"my first blog post"}', 'resp_id': 1381}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"fuzzstring"}', 'resp_id': 1381}] [{'status_code': '204', 'resp_body': '', 'resp_id': 1379}, {'status_code': '204', 'resp_body': '', 'resp_id': 1381}, {'status_code': '204', 'resp_body': '', 'resp_id': 1381}]
+POST -> DELETE   MR Equivalence : OK
+2024-04-05 11:48:57.156: Generation: 2 
+resp and rule, Method ->  PUT
+<engine.core.sequences.Sequence object at 0x00000213B201FE50> [{'status_code': '201', 'resp_body': '{"id":1379,"body":"fuzzstring"}', 'resp_id': 1379}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"my first blog post"}', 'resp_id': 1381}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"fuzzstring"}', 'resp_id': 1381}]
+resp and rule, Method ->  PUT
+<engine.core.sequences.Sequence object at 0x00000213B201FE50> [{'status_code': '201', 'resp_body': '{"id":1379,"body":"fuzzstring"}', 'resp_id': 1379}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"my first blog post"}', 'resp_id': 1381}, {'status_code': '201', 'resp_body': '{"id":1381,"body":"fuzzstring"}', 'resp_id': 1381}]
+2024-04-05 11:49:01.701: Terminating garbage collection. Waiting for max 300 seconds. 
+Done.
