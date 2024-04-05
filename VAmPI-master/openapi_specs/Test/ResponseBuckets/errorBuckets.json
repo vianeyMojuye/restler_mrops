@@ -1,0 +1,338 @@
+{
+  "0": {},
+  "400": {
+    "b7ba35e9-997e-4918-9b07-31ac0b44c5f3": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/books/v1",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{ \"status\": \"fail\", \"message\": \"Please provide a proper JSON body.\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "PUT",
+            "path": "/users/v1/fuzzstring/email",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{ \"status\": \"fail\", \"message\": \"Please provide a proper JSON body.\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "PUT",
+            "path": "/users/v1/name1/email",
+            "query": "",
+            "body": "{}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "BAD REQUEST",
+            "content": "{ \"status\": \"fail\", \"message\": \"Please provide a proper JSON body.\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ]
+  },
+  "401": {
+    "8427f04d-b2e5-48b3-aeeb-4a5f9fc80e94": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/books/v1/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "UNAUTHORIZED",
+            "content": "{ \"status\": \"fail\", \"message\": \"Invalid token\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/books/v1/bookTitle77",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "UNAUTHORIZED",
+            "content": "{ \"status\": \"fail\", \"message\": \"Invalid token\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/books/v1/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "UNAUTHORIZED",
+            "content": "{ \"status\": \"fail\", \"message\": \"Invalid token\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/books/v1/bookTitle77",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "UNAUTHORIZED",
+            "content": "{ \"status\": \"fail\", \"message\": \"Invalid token\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/users/v1/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "UNAUTHORIZED",
+            "content": "{ \"status\": \"fail\", \"message\": \"Invalid token\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/users/v1/name1",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "UNAUTHORIZED",
+            "content": "{ \"status\": \"fail\", \"message\": \"Invalid token\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/users/v1/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "UNAUTHORIZED",
+            "content": "{ \"status\": \"fail\", \"message\": \"Invalid token\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/users/v1/name1",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "UNAUTHORIZED",
+            "content": "{ \"status\": \"fail\", \"message\": \"Invalid token\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/books/v1",
+            "query": "",
+            "body": "{\n    \"book_title\":\"fuzzstring\",\n    \"secret\":\"fuzzstring\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "UNAUTHORIZED",
+            "content": "{ \"status\": \"fail\", \"message\": \"Invalid token\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/books/v1",
+            "query": "",
+            "body": "{\n    \"book_title\":\"fuzzstring\",\n    \"secret\":\"pass1secret\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 401,
+            "codeDescription": "UNAUTHORIZED",
+            "content": "{ \"status\": \"fail\", \"message\": \"Invalid token\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ]
+  },
+  "404": {
+    "60c6a436-280c-4aa7-af15-0cced951e93c": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/users/v1/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{ \"status\": \"fail\", \"message\": \"User not found\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/users/v1/John.Doe",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{ \"status\": \"fail\", \"message\": \"User not found\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/users/v1/fuzzstring",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{ \"status\": \"fail\", \"message\": \"User not found\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/users/v1/John.Doe",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "NOT FOUND",
+            "content": "{ \"status\": \"fail\", \"message\": \"User not found\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ]
+  }
+}

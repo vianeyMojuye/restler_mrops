@@ -1,0 +1,22 @@
+{
+    "status_code": "200",
+    "checker_name": "MropEquivalenceChecker",
+    "reproducible": true,
+    "verb": "POST",
+    "endpoint": "/users/v1/register",
+    "status_text": "OK",
+    "request_sequence": [
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "POST /users/v1/register HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:5000\r\nContent-Type: application/json\r\n\r\n{\n    \"username\":\"John.Doe\",\n    \"password\":\"password123\",\n    \"email\":\"user@tempmail.com\"}\r\n",
+            "response": "HTTP/1.1 200 OK\r\nServer: Werkzeug/2.2.3 Python/3.10.5\r\nDate: Wed, 03 Apr 2024 07:39:37 GMT\r\nContent-Type: application/json\r\nContent-Length: 92\r\nConnection: close\r\n\r\n{\"message\": \"Successfully registered. Login to receive an auth token.\", \"status\": \"success\"}"
+        },
+        {
+            "producer_timing_delay": 0,
+            "max_async_wait_time": 0,
+            "replay_request": "POST /users/v1/register HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:5000\r\nContent-Type: application/json\r\n\r\n{\n    \"username\":\"John.Doe\",\n    \"password\":\"password123\",\n    \"email\":\"fuzzstring\"}\r\n",
+            "response": "HTTP/1.1 200 OK\r\nServer: Werkzeug/2.2.3 Python/3.10.5\r\nDate: Wed, 03 Apr 2024 07:39:37 GMT\r\nContent-Type: application/json\r\nContent-Length: 69\r\nConnection: close\r\n\r\n{ \"status\": \"fail\", \"message\": \"User already exists. Please Log in.\"}"
+        }
+    ]
+}

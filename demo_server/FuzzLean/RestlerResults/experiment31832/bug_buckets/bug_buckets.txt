@@ -1,0 +1,18 @@
+MropEquivalenceChecker_20x: 2
+MropEquivalenceChecker_500: 1
+Total Buckets: 3
+-------------
+MropEquivalenceChecker_20x - Bug was reproduced - MropEquivalenceChecker_20x_1.replay.txt
+Hash: MropEquivalenceChecker_20x_be68c3762977df280994afb71a0147e3512091c4
+POST /api/blog/posts HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8888\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "body":fuzzstring}\r\n
+--------------------------------------------------------------------------------
+MropEquivalenceChecker_20x - Bug was reproduced - MropEquivalenceChecker_20x_2.replay.txt
+Hash: MropEquivalenceChecker_20x_82a38edf44e1613514ac1ad0303a4efabdbbb47d
+POST /api/blog/posts HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8888\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "body":fuzzstring}\r\n
+PUT /api/blog/posts/_READER_DELIM_api_blog_posts_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8888\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":_READER_DELIM_api_blog_posts_post_id_READER_DELIM,\n    "body":_READER_DELIM_api_blog_posts_post_body_READER_DELIM,\n    "checksum":fuzzstring}\r\n
+--------------------------------------------------------------------------------
+MropEquivalenceChecker_500 - Bug was reproduced - MropEquivalenceChecker_500_1.replay.txt
+Hash: MropEquivalenceChecker_500_82a38edf44e1613514ac1ad0303a4efabdbbb47d
+POST /api/blog/posts HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8888\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":1,\n    "body":fuzzstring}\r\n
+PUT /api/blog/posts/_READER_DELIM_api_blog_posts_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:8888\r\nContent-Type: application/json\r\nauthentication_token_tag\r\n{\n    "id":_READER_DELIM_api_blog_posts_post_id_READER_DELIM,\n    "body":_READER_DELIM_api_blog_posts_post_body_READER_DELIM,\n    "checksum":fuzzstring}\r\n
+--------------------------------------------------------------------------------

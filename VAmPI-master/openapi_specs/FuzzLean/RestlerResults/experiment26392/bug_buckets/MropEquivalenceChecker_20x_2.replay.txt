@@ -1,0 +1,26 @@
+################################################################################
+ MropEquivalenceChecker_20x
+
+ Hash: MropEquivalenceChecker_20x_514b8813b6650ebaf2e623ae768705a8f1dcc7ad
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> POST /users/v1/register HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:5000\r\nContent-Type: application/json\r\n\r\n{\n    "username":"John.Doe",\n    "password":"password123",\n    "email":"user@tempmail.com"}\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nServer: Werkzeug/2.2.3 Python/3.10.5\r\nDate: Wed, 03 Apr 2024 07:39:37 GMT\r\nContent-Type: application/json\r\nContent-Length: 92\r\nConnection: close\r\n\r\n{"message": "Successfully registered. Login to receive an auth token.", "status": "success"}'
+
+-> POST /users/v1/register HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:5000\r\nContent-Type: application/json\r\n\r\n{\n    "username":"John.Doe",\n    "password":"password123",\n    "email":"fuzzstring"}\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nServer: Werkzeug/2.2.3 Python/3.10.5\r\nDate: Wed, 03 Apr 2024 07:39:37 GMT\r\nContent-Type: application/json\r\nContent-Length: 69\r\nConnection: close\r\n\r\n{ "status": "fail", "message": "User already exists. Please Log in."}'
+

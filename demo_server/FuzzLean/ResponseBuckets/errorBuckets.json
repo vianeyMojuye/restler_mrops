@@ -1,0 +1,168 @@
+{
+  "400": {
+    "1b12fe5f-e190-455a-b804-13f09f785ac0": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/blog/posts",
+            "query": "",
+            "body": "{\"id\":1,\"body\":\"fuzzstring\"}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "{\"detail\":\"ID must be at least 10\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/blog/posts",
+            "query": "",
+            "body": "{\"id\":1,\"body\":\"my first blog post\"}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "{\"detail\":\"ID must be at least 10\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/blog/posts",
+            "query": "",
+            "body": "{\n    \"id\":1,\n    \"body\":\"fuzzstring\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "{\"detail\":\"ID must be at least 10\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "POST",
+            "path": "/api/blog/posts",
+            "query": "",
+            "body": "{\n    \"id\":1,\n    \"body\":\"my first blog post\"}\r\n"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "{\"detail\":\"ID must be at least 10\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ],
+    "bebaae87-a9f8-4661-bcf6-f222b7fc4bc8": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "GET",
+            "path": "/api/blog/posts",
+            "query": "page=1&per_page=1",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 400,
+            "codeDescription": "Bad Request",
+            "content": "{\"detail\":\"per_page must be at least 2.\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ]
+  },
+  "404": {
+    "b82bf3e1-e487-4f35-b718-72d7c06baa95": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "DELETE",
+            "path": "/api/blog/posts/1385",
+            "query": "",
+            "body": ""
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 404,
+            "codeDescription": "Not Found",
+            "content": "{\"detail\":\"Blog post with id=1385 not found.\"}",
+            "isFailure": true,
+            "isBug": false
+          }
+        }
+      }
+    ]
+  },
+  "500": {
+    "1aaf47f2-f980-4175-b3f6-c1720749a9b8": [
+      {
+        "request": {
+          "RequestData": {
+            "method": "PUT",
+            "path": "/api/blog/posts/1383",
+            "query": "",
+            "body": "{\"body\":\"my first blog post\"}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "Internal Server Error",
+            "content": "{\"detail\":\"ID was not specified.\"}",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      },
+      {
+        "request": {
+          "RequestData": {
+            "method": "PUT",
+            "path": "/api/blog/posts/1383",
+            "query": "",
+            "body": "{\"body\":\"my first blog post\"}"
+          }
+        },
+        "response": {
+          "ResponseData": {
+            "code": 500,
+            "codeDescription": "Internal Server Error",
+            "content": "{\"detail\":\"ID was not specified.\"}",
+            "isFailure": true,
+            "isBug": true
+          }
+        }
+      }
+    ]
+  }
+}
